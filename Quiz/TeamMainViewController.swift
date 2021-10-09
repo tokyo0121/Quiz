@@ -13,7 +13,7 @@ class TeamMainViewController: UIViewController {
     var TeamQuizArray = [[Any]]()
     
     //正解数
-    var correctAnswer: Int = 0
+    var TeamCorrectAnswer: Int = 0
     
     //お題を表示するTextView
     @IBOutlet var TeamQuiztTextView: UITextView!
@@ -62,7 +62,7 @@ class TeamMainViewController: UIViewController {
         if segue.identifier == "toTeamResultView" {
             
             let TeamResultView = segue.destination as? TeamResultViewController
-            TeamResultView?.TeamCorrectAnswer = self.correctAnswer
+            TeamResultView?.TeamCorrectAnswer = self.TeamCorrectAnswer
         }
     }
     

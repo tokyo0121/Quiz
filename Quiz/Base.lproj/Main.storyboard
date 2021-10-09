@@ -25,7 +25,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="zVR-gx-5SD" kind="show" id="tkS-EA-y2u"/>
+                                    <segue destination="zVR-gx-5SD" kind="presentation" modalPresentationStyle="fullScreen" id="tkS-EA-y2u"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yVE-O7-2D6" customClass="soloImage">
@@ -37,7 +37,7 @@
                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
                                 </state>
                                 <connections>
-                                    <segue destination="pyx-0S-Xqh" kind="show" id="HW2-Rx-bVq"/>
+                                    <segue destination="pyx-0S-Xqh" kind="presentation" modalPresentationStyle="fullScreen" id="HW2-Rx-bVq"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -59,7 +59,7 @@
             <objects>
                 <viewController id="pyx-0S-Xqh" customClass="KojinExplainViewController" customModule="Quiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PW3-NT-o91">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rule_1" translatesAutoresizingMaskIntoConstraints="NO" id="mv5-B4-Qvd">
@@ -72,7 +72,7 @@
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="Button" image="start-1"/>
                                 <connections>
-                                    <segue destination="Ifs-l7-6ET" kind="show" id="cJx-WO-loa"/>
+                                    <segue destination="Ifs-l7-6ET" kind="presentation" modalPresentationStyle="fullScreen" id="cJx-WO-loa"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -90,7 +90,7 @@
             <objects>
                 <viewController id="Ifs-l7-6ET" customClass="KojinMainViewController" customModule="Quiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tWY-DP-Qsg">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vFP-bY-8ne">
@@ -112,7 +112,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="次へ"/>
                                 <connections>
-                                    <action selector="SoloQuizAnswerWithSender:" destination="Ifs-l7-6ET" eventType="touchDragInside" id="9Ym-Ms-Pwd"/>
+                                    <action selector="SoloQuizAnswerWithSender:" destination="Ifs-l7-6ET" eventType="touchUpInside" id="bwf-3q-PhX"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -123,7 +123,7 @@
                     <connections>
                         <outlet property="SoloQuizImageView" destination="vFP-bY-8ne" id="umU-sR-3tb"/>
                         <outlet property="SoloQuiztTextView" destination="dIp-FV-9Xh" id="sgI-c3-oZb"/>
-                        <segue destination="JKJ-EG-5dZ" kind="presentation" id="wef-fS-MbW"/>
+                        <segue destination="JKJ-EG-5dZ" kind="presentation" identifier="toSoloResultView" modalPresentationStyle="fullScreen" id="wef-fS-MbW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cg3-mf-u0F" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -135,7 +135,7 @@
             <objects>
                 <viewController id="JKJ-EG-5dZ" customClass="KojinResultViewController" customModule="Quiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6b4-Ez-Gej">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BK0-lb-nd3">
@@ -147,7 +147,7 @@
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="vXZ-lx-hvc" kind="presentation" modalPresentationStyle="fullScreen" id="NP9-T3-Xi8"/>
+                                    <segue destination="vXZ-lx-hvc" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="coverVertical" id="NP9-T3-Xi8"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -164,7 +164,7 @@
             <objects>
                 <viewController id="zVR-gx-5SD" customClass="TeamExplainViewController" customModule="Quiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="iSi-11-7nt">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rule_1" translatesAutoresizingMaskIntoConstraints="NO" id="0cB-OP-6cl">
@@ -176,6 +176,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="Button" image="start-1"/>
+                                <connections>
+                                    <segue destination="7jF-TX-Wuj" kind="presentation" modalPresentationStyle="fullScreen" id="HmN-6y-RXI"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="kaI-ko-jwe"/>
@@ -225,7 +228,7 @@
                     <connections>
                         <outlet property="TeamQuizImageView" destination="kFg-Op-2Aa" id="bGg-3t-lCP"/>
                         <outlet property="TeamQuiztTextView" destination="Jht-jC-qbq" id="x0c-ps-g8A"/>
-                        <segue destination="mG2-nj-hL6" kind="presentation" identifier="toTeamResultView" id="tnc-me-S7y"/>
+                        <segue destination="mG2-nj-hL6" kind="presentation" identifier="toTeamResultView" modalPresentationStyle="fullScreen" id="tnc-me-S7y"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UTr-bC-hSl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -237,7 +240,7 @@
             <objects>
                 <viewController id="mG2-nj-hL6" customClass="TeamResultViewController" customModule="Quiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2cU-5E-ogt">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kht-5N-he6">
@@ -252,6 +255,17 @@
                                     <segue destination="vXZ-lx-hvc" kind="presentation" modalPresentationStyle="fullScreen" id="6ft-g1-9VH"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XkO-dL-dfr">
+                                <rect key="frame" x="149" y="521" width="109" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="思い出">
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="haL-7l-dRf" kind="presentation" modalPresentationStyle="fullScreen" id="e2I-8M-2e4"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="5DW-oP-bmM"/>
                         <color key="backgroundColor" red="0.2229623795" green="0.2150663733" blue="0.52551752330000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -260,7 +274,49 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2mq-Oc-1QA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2313" y="1815"/>
+            <point key="canvasLocation" x="2311.594202898551" y="1814.7321428571427"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Xxi-wZ-m28">
+            <objects>
+                <viewController id="haL-7l-dRf" customClass="ViewController" customModule="Quiz" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="thM-3m-bLr">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UmP-4u-FAU">
+                                <rect key="frame" x="0.0" y="114" width="414" height="331"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2az-wM-K56">
+                                <rect key="frame" x="246" y="75" width="156" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="アルバム"/>
+                                <connections>
+                                    <action selector="onTappedAlbumButton" destination="haL-7l-dRf" eventType="touchUpInside" id="1Bn-L5-fgh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DHL-eE-pGH">
+                                <rect key="frame" x="141" y="737" width="217" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="アップロード"/>
+                                <connections>
+                                    <action selector="onTappedUploadButton" destination="haL-7l-dRf" eventType="touchUpInside" id="NyW-9h-ifZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="B8j-Gd-cxH"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <connections>
+                        <outlet property="photoImageView" destination="UmP-4u-FAU" id="0Rn-NA-q2W"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ghs-9o-VAt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3608.6956521739135" y="1814.7321428571427"/>
         </scene>
         <!--Quiz View Controller-->
         <scene sceneID="H7m-Go-mtN">
@@ -369,6 +425,9 @@
         <image name="solo" width="837" height="820"/>
         <image name="start-1" width="1158" height="1134"/>
         <image name="team" width="837" height="820"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemGroupedBackgroundColor">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
