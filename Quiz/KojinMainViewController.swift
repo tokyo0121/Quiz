@@ -13,7 +13,7 @@ class KojinMainViewController: UIViewController {
     var SoloQuizArray = [[Any]]()
     
     //正解数
-    var correctAnswer: Int = 0
+    var SoloCorrectAnswer: Int = 0
     
     //お題を表示するTextView
     @IBOutlet var SoloQuiztTextView: UITextView!
@@ -62,7 +62,7 @@ class KojinMainViewController: UIViewController {
         if segue.identifier == "toSoloResultView" {
             
             let SoloResultView = segue.destination as? KojinResultViewController
-            SoloResultView?.SoloCorrectAnswer = self.correctAnswer
+            SoloResultView?.SoloCorrectAnswer = self.SoloCorrectAnswer
         }
     }
     

@@ -14,6 +14,7 @@
 		2B1530CF2711D495006FCCFE /* TeamMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1530CE2711D495006FCCFE /* TeamMainViewController.swift */; };
 		2B1530D12711E947006FCCFE /* TeamResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1530D02711E947006FCCFE /* TeamResultViewController.swift */; };
 		2B1530D32711F75D006FCCFE /* KojinResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1530D22711F75D006FCCFE /* KojinResultViewController.swift */; };
+		2B1530D527121533006FCCFE /* SliderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1530D427121533006FCCFE /* SliderCell.swift */; };
 		2DC0C2A9264A6DED00EF7504 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DC0C2A8264A6DED00EF7504 /* icon.png */; };
 		AF223C441A8C6B9100E3B3B9 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AF223C411A8C6B9100E3B3B9 /* Default-568h@2x.png */; };
 		AF223C451A8C6B9100E3B3B9 /* Default-667h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AF223C421A8C6B9100E3B3B9 /* Default-667h@2x.png */; };
@@ -38,6 +39,7 @@
 		2B1530CE2711D495006FCCFE /* TeamMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamMainViewController.swift; sourceTree = "<group>"; };
 		2B1530D02711E947006FCCFE /* TeamResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamResultViewController.swift; sourceTree = "<group>"; };
 		2B1530D22711F75D006FCCFE /* KojinResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KojinResultViewController.swift; sourceTree = "<group>"; };
+		2B1530D427121533006FCCFE /* SliderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderCell.swift; sourceTree = "<group>"; };
 		2DC0C2A8264A6DED00EF7504 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		AF223C411A8C6B9100E3B3B9 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		AF223C421A8C6B9100E3B3B9 /* Default-667h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-667h@2x.png"; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 				C7FE4DDF1A8A17B9004C530A /* ResultViewController.swift */,
 				CAF885FF22A68D3C007EDF3C /* TopViewController.swift */,
 				2B1530CA2711D463006FCCFE /* KojinMainViewController.swift */,
+				2B1530D427121533006FCCFE /* SliderCell.swift */,
 				2B1530D22711F75D006FCCFE /* KojinResultViewController.swift */,
 				C7343EA41A89986900D857EA /* Main.storyboard */,
 				C7343EA71A89986900D857EA /* Images.xcassets */,
@@ -226,6 +229,7 @@
 				C7343EA11A89986900D857EA /* AppDelegate.swift in Sources */,
 				2B1530D32711F75D006FCCFE /* KojinResultViewController.swift in Sources */,
 				C7343EC11A89997C00D857EA /* QuizViewController.swift in Sources */,
+				2B1530D527121533006FCCFE /* SliderCell.swift in Sources */,
 				C7FE4DE01A8A17B9004C530A /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

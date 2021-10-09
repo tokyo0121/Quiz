@@ -8,12 +8,41 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
+    //写真表示用ImageView
+    @IBOutlet var photoImageView: UIImageView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+    }
+    
+    
+    //アルバムボタンを押した時
+    @IBAction func onTappedAlbumButton(){
+        presentPickerController(sourceType: .photoLibrary)
+    }
+    
+    //アルバム呼び出し
+    func presentPickerController(sourceType: UIImagePickerController.SourceType){
+        if UIImagePickerController.isSourceTypeAvailable(sourceType){
+            let picker = UIImagePickerController()
+            picker.sourceType = sourceType
+            picker.delegate = self
+            self.present(picker, animated: true, completion: nil)
+        }
+    }
+    
+    //アップロードボタンを押した時
+    @IBAction func onTappedUploadButton(){
+        if photoImageView.image != nil{
+            //共有アイテムを設定
+            let activityVC = UIActivityViewController(activityItems: [photoImageView.image!], applicationActivities: nil)
+            self.present(activityVC, animated: true, completion: nil)
+        }else {
+            print("画像がありません")
+        }
     }
     
 
