@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B1530C7271199C9006FCCFE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1530C6271199C9006FCCFE /* ViewController.swift */; };
 		2DC0C2A9264A6DED00EF7504 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DC0C2A8264A6DED00EF7504 /* icon.png */; };
 		AF223C441A8C6B9100E3B3B9 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AF223C411A8C6B9100E3B3B9 /* Default-568h@2x.png */; };
 		AF223C451A8C6B9100E3B3B9 /* Default-667h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AF223C421A8C6B9100E3B3B9 /* Default-667h@2x.png */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2B1530C6271199C9006FCCFE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2DC0C2A8264A6DED00EF7504 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		AF223C411A8C6B9100E3B3B9 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		AF223C421A8C6B9100E3B3B9 /* Default-667h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-667h@2x.png"; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 				C7343EA41A89986900D857EA /* Main.storyboard */,
 				C7343EA71A89986900D857EA /* Images.xcassets */,
 				C7343EA91A89986900D857EA /* LaunchScreen.xib */,
+				2B1530C6271199C9006FCCFE /* ViewController.swift */,
 				B101ABF51B53796200919FB9 /* images */,
 				C7343E9E1A89986900D857EA /* Supporting Files */,
 			);
@@ -195,6 +198,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B1530C7271199C9006FCCFE /* ViewController.swift in Sources */,
 				CAF8860022A68D3C007EDF3C /* TopViewController.swift in Sources */,
 				C7343EA11A89986900D857EA /* AppDelegate.swift in Sources */,
 				C7343EC11A89997C00D857EA /* QuizViewController.swift in Sources */,

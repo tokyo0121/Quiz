@@ -27,14 +27,14 @@ class QuizViewController: UIViewController {
     
     
     //画像
-    var img01 :UIImage = UIImage(named: "button")!
+    var img01 :UIImage = UIImage(named: "img01")!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         //------------------------ここから下にクイズを書く------------------------//
-        quizArray.append([img01, "京都府", "鹿児島県", 1])
-        quizArray.append([img01, "ちゃば", "ちゃっぱ", 2])
+        quizArray.append([img01, "フ", "ン", 1])
+        quizArray.append([img01, "フ", "ン", 2])
         //------------------------ここから上にクイズを書く------------------------//
         
         //クイズの中身をシャッフルする
