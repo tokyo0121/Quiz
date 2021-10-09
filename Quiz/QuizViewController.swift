@@ -16,19 +16,25 @@ class QuizViewController: UIViewController {
     var correctAnswer: Int = 0
     
     //クイズを表示するTextView
-    @IBOutlet var quizTextView: UITextView!
+    @IBOutlet var quizImageView: UIImageView!
     
     //選択肢のボタン
     @IBOutlet var choiceButtons1: UIButton!
     @IBOutlet var choiceButtons2: UIButton!
-    @IBOutlet var choiceButtons3: UIButton!
+    
+    //正誤判定
+    @IBOutlet weak var answerImage: UIImageView!
+    
+    
+    //画像
+    var img01 :UIImage = UIImage(named: "button")!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         //------------------------ここから下にクイズを書く------------------------//
-        quizArray.append(["2020年日本茶の生産量が1位の都道府県は？", "京都府", "鹿児島県", "静岡", 2])
-        quizArray.append(["「茶葉」これなんて読む？", "ちゃば", "ちゃっぱ", "ちゃよう", 3])
+        quizArray.append([img01, "京都府", "鹿児島県", 1])
+        quizArray.append([img01, "ちゃば", "ちゃっぱ", 2])
         //------------------------ここから上にクイズを書く------------------------//
         
         //クイズの中身をシャッフルする
@@ -38,18 +44,26 @@ class QuizViewController: UIViewController {
     }
     
     func choiceQuiz() {
-        quizTextView.text = quizArray[0][0] as? String
+        quizImageView.image = quizArray[0][0] as? UIImage
         
         //選択肢のボタンにそれぞれ選択肢のテキストをセット
         choiceButtons1.setTitle(quizArray[0][1] as? String, for: .normal)
         choiceButtons2.setTitle(quizArray[0][2] as? String, for: .normal)
-        choiceButtons3.setTitle(quizArray[0][3] as? String, for: .normal)
     }
     
     @IBAction func choiceAnswer(sender: UIButton) {
-        if quizArray[0][4] as! Int == sender.tag {
+        if quizArray[0][3] as! Int == sender.tag {
             //正解数を増やす
             correctAnswer+=1
+            
+            answerImage.image = UIImage(named: "true")
+        }else{
+            answerImage.image = UIImage(named: "false")
+        }
+        
+        answerImage.isHidden = false
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                    self.answerImage.isHidden = true
         }
         
         quizArray.remove(at: 0)
