@@ -86,6 +86,27 @@ class QuizViewController: UIViewController {
             resultView.correctAnswer = self.correctAnswer
         }
     }
-}
+    
+    
+    //タイムアタック
+    //タイマーをセットするメソッド
+    //func setTimer() {
+
+        //毎秒ごとにperSecTimerDoneメソッドを実行するタイマーを作成する
+        //self.perSecTimer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: #selector(QuizViewController.perSecTimerDone), userInfo: nil, repeats: true)
+
+        //指定秒数後にtimerDoneメソッドを実行するタイマーを作成する（問題の時間制限に到達した場合の実行）
+        //self.doneTimer = NSTimer.scheduledTimerWithTimeInterval(QuizStruct.timerDuration, target: self, selector: #selector(QuizViewController.timerDone), userInfo: nil, repeats: true)
+    //}
+
+    //タイマー処理を全てリセットするメソッド
+    //func resetTimer() {
+        //self.perSecTimer!.invalidate()
+        //self.doneTimer!.invalidate()
+    //}
+//}
 
 
+    }
+
+ 
