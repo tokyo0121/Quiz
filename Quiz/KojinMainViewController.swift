@@ -15,22 +15,31 @@ class KojinMainViewController: UIViewController {
     //正解数
     var SoloCorrectAnswer: Int = 0
     
-    //お題を表示するTextView
-    @IBOutlet var SoloQuiztTextView: UITextView!
-    
-    //お題を表示するImageView
+    //お題を表示する
     @IBOutlet var SoloQuizImageView: UIImageView!
+    
+    //お題の問題文を表示
+    @IBOutlet var SoloQuizTextImageView: UIImageView!
     
     
     //お題のImage設定
-    var img01 :UIImage = UIImage(named: "img01")!
+    var img01 :UIImage = UIImage(named: "7-8")!
+    var img02 :UIImage = UIImage(named: "8-8")!
+    var img03 :UIImage = UIImage(named: "9-8")!
+    
+    
+    //お題のオ◯ライン
+    var ofton01 :UIImage = UIImage(named: "13-8")!
+    var ofton02 :UIImage = UIImage(named: "14-8")!
+    var ofton03 :UIImage = UIImage(named: "15-8")!
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        SoloQuizArray.append([img01,"オフライン or オンライン どちらでしょう？　\n「フ」か「ン」を体で表して答えてください。"])
-        SoloQuizArray.append([img01,"オフライン or オンライン どちらでしょう？ \n 体で表現してみなよ。"])
+        SoloQuizArray.append([ofton01,img01])
+        SoloQuizArray.append([ofton02,img02])
+        SoloQuizArray.append([ofton03,img03])
         
         showSoloQuiz()
 
@@ -39,7 +48,7 @@ class KojinMainViewController: UIViewController {
     
     func showSoloQuiz(){
         SoloQuizImageView.image = SoloQuizArray[0][0] as? UIImage
-        SoloQuiztTextView.text = SoloQuizArray[0][1] as? String
+        SoloQuizTextImageView.image = SoloQuizArray[0][1] as? UIImage
 
     }
     
