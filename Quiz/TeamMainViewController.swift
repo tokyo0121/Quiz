@@ -23,15 +23,15 @@ class TeamMainViewController: UIViewController {
     
     
     //お題のImage設定
-    var img01 :UIImage = UIImage(named: "7-8")!
-    var img02 :UIImage = UIImage(named: "8-8")!
+    var img01 :UIImage = UIImage(named: "10-8")!
+    var img02 :UIImage = UIImage(named: "11-8")!
     var img03 :UIImage = UIImage(named: "9-8")!
     
     
     //お題のオ◯ライン
-    var ofton01 :UIImage = UIImage(named: "13-8")!
+    var ofton01 :UIImage = UIImage(named: "15-8")!
     var ofton02 :UIImage = UIImage(named: "14-8")!
-    var ofton03 :UIImage = UIImage(named: "15-8")!
+    var ofton03 :UIImage = UIImage(named: "13-8")!
     
 
     override func viewDidLoad() {

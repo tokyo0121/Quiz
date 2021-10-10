@@ -17,19 +17,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O8r-1G-q3t">
-                                <rect key="frame" x="85" y="511" width="245" height="245"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="チーム戦" image="team">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <segue destination="ybf-Gx-NQg" kind="presentation" modalPresentationStyle="fullScreen" id="Xa5-J3-iLb"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yVE-O7-2D6" customClass="soloImage">
-                                <rect key="frame" x="85" y="147" width="245" height="245"/>
+                                <rect key="frame" x="85" y="128" width="245" height="245"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="Button" image="solo">
@@ -38,6 +27,17 @@
                                 </state>
                                 <connections>
                                     <segue destination="ozr-gg-KrS" kind="presentation" modalPresentationStyle="fullScreen" id="IpL-fv-06t"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O8r-1G-q3t">
+                                <rect key="frame" x="85" y="491" width="245" height="245"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="チーム戦" image="team">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="ybf-Gx-NQg" kind="presentation" modalPresentationStyle="fullScreen" id="Xa5-J3-iLb"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -182,6 +182,11 @@
                                     <segue destination="7jF-TX-Wuj" kind="presentation" modalPresentationStyle="fullScreen" id="cCD-Bk-8fI"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="16-8" translatesAutoresizingMaskIntoConstraints="NO" id="08b-ba-Vf9">
+                                <rect key="frame" x="69" y="232" width="298" height="195"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.2229623795" green="0.2150663733" blue="0.52551752330000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="giV-aV-JDI"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -269,6 +274,66 @@
             </objects>
             <point key="canvasLocation" x="2311.594202898551" y="1814.7321428571427"/>
         </scene>
+        <!--Root View Controller-->
+        <scene sceneID="TLj-Dc-IDW">
+            <objects>
+                <tableViewController id="FBi-ln-ncb" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="3KS-OW-NHN">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.2229623795" green="0.2150663733" blue="0.52551752330000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="208" id="aHn-cr-cY7">
+                                <rect key="frame" x="0.0" y="44.5" width="414" height="208"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="aHn-cr-cY7" id="Oq9-wH-HdX">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="208"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.2229623795" green="0.2150663733" blue="0.52551752330000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="FBi-ln-ncb" id="5wl-NG-Wcg"/>
+                            <outlet property="delegate" destination="FBi-ln-ncb" id="AfQ-WL-5xb"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="Adf-qq-ttU">
+                        <barButtonItem key="rightBarButtonItem" image="plus.app.fill" catalog="system" style="plain" id="hGV-Im-G4i">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="zAb-HC-cPE">
+                                <rect key="frame" x="302" y="5" width="92" height="34.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                            </button>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <segue destination="VOJ-qX-g1V" kind="presentation" modalPresentationStyle="fullScreen" id="Hv6-3v-tlf"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vLC-bv-K4X" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1612" y="2592"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="b6C-Rp-Z20">
+            <objects>
+                <navigationController id="Uob-dw-Tnd" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="hfW-2x-r1Y">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="FBi-ln-ncb" kind="relationship" relationship="rootViewController" id="Xom-i0-fSq"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4EA-oX-1ZX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="874" y="2592"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="Mg2-bd-GXg">
             <objects>
@@ -277,28 +342,32 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iCC-iI-zdG">
-                                <rect key="frame" x="0.0" y="154" width="414" height="230"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="iCC-iI-zdG">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fA3-o0-ysB">
-                                <rect key="frame" x="157" y="94" width="245" height="31"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9BZ-IQ-b1v">
+                                <rect key="frame" x="0.0" y="121" width="414" height="291"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rgf-Q2-cyN">
+                                <rect key="frame" x="218" y="82" width="184" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="アルバム"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Album"/>
                                 <connections>
-                                    <action selector="selectPicture:" destination="VOJ-qX-g1V" eventType="touchUpInside" id="Jl8-7c-jTI"/>
+                                    <action selector="selectPicture:" destination="VOJ-qX-g1V" eventType="touchUpInside" id="aNH-Y9-pOE"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kpz-CL-Bnq">
-                                <rect key="frame" x="157" y="717" width="230" height="31"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JEl-Z9-LDA">
+                                <rect key="frame" x="218" y="433" width="176" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="削除"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Delete"/>
                                 <connections>
-                                    <action selector="deletePicture:" destination="VOJ-qX-g1V" eventType="touchUpInside" id="1vd-xn-Ef8"/>
+                                    <action selector="deletePicture:" destination="VOJ-qX-g1V" eventType="touchUpInside" id="ojg-h8-YLR"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -306,12 +375,12 @@
                         <color key="backgroundColor" red="0.2229623795" green="0.2150663733" blue="0.52551752330000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <connections>
-                        <outlet property="imageView" destination="iCC-iI-zdG" id="6K5-JW-P3y"/>
+                        <outlet property="imageView" destination="9BZ-IQ-b1v" id="5pW-hw-LzD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mBj-xX-Sti" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3224.6376811594205" y="1814.7321428571427"/>
+            <point key="canvasLocation" x="2312" y="2592"/>
         </scene>
         <!--Quiz View Controller-->
         <scene sceneID="H7m-Go-mtN">
@@ -413,15 +482,17 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="SeU-i2-2z3"/>
+        <segue reference="Si2-X9-oOR"/>
     </inferredMetricsTieBreakers>
     <resources>
+        <image name="16-8" width="690" height="327"/>
         <image name="bg" width="1125" height="2436"/>
         <image name="bg-1" width="1125" height="2436"/>
         <image name="button-1" width="559" height="547"/>
         <image name="button-2" width="773" height="757"/>
         <image name="last" width="621" height="608"/>
         <image name="offtoonlast" width="1125" height="2436"/>
+        <image name="plus.app.fill" catalog="system" width="128" height="114"/>
         <image name="solo" width="837" height="820"/>
         <image name="team" width="837" height="820"/>
         <systemColor name="systemBackgroundColor">
