@@ -29,9 +29,9 @@ class KojinMainViewController: UIViewController {
     
     
     //お題のオ◯ライン
-    var ofton01 :UIImage = UIImage(named: "13-8")!
+    var ofton01 :UIImage = UIImage(named: "15-8")!
     var ofton02 :UIImage = UIImage(named: "14-8")!
-    var ofton03 :UIImage = UIImage(named: "15-8")!
+    var ofton03 :UIImage = UIImage(named: "13-8")!
     
 
     override func viewDidLoad() {
